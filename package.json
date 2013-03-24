@@ -1,0 +1,20 @@
+{
+    "name": "node-express-mongo-angular",
+    "version": "0.0.1",
+    "private": true,
+    "engines": {
+        "node": "0.8.x",
+        "npm": "1.1.x"
+    },
+    "scripts": {
+        "start": "node app"
+    },
+    "dependencies": {
+        "express": "3.0.3",
+        "jshtml-express": "0.0.1",
+        "stylus": "*",
+        "async": "*",
+        "generic-pool": "*",
+        "mongoose": "*"
+    }
+}

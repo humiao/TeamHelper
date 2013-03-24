@@ -1,0 +1,157 @@
+<ul class="breadcrumb">
+    <li><a href="#">员工管理</a> <span class="divider">/</span></li>
+    <li class="active">新建员工</li>
+</ul>
+
+<!-- 新建员工 -->
+<div class="tab-pane">
+    <form class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputNumber">工号</label>
+
+            <div class="controls">
+                <input type="text" id="inputNumber" placeholder="001" ng-model='item.number'>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputName">姓名</label>
+
+            <div class="controls">
+                <input type="text" id="inputName" placeholder="张三" ng-model='item.name'>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="idNum">身份证号码</label>
+
+            <div class="controls">
+                <input type="text" id="idNum" placeholder="330111111111111111"  ng-model='item.idNum'>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputDate">出生日期</label>
+
+            <div class="controls">
+                <div class="input-append">
+                    <input class="span2" id="inputDate" type="text" placeholder="2013-03-03"/>
+
+                    <div class="btn-group">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-calendar"></i></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                            <li><a href="#">Action</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputDate2">入职时间</label>
+
+            <div class="controls">
+                <div class="input-append">
+                    <input class="span2" id="inputDate2" type="text" placeholder="2013-03-03"/>
+                    <a class="btn" href="#"><i class="icon-calendar"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputDate3">转正时间</label>
+
+            <div class="controls">
+                <div class="input-append">
+                    <input class="span2" id="inputDate3" type="text" placeholder="2013-03-03"/>
+                    <a class="btn" href="#"><i class="icon-calendar"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputDate3">在职状态</label>
+
+            <div class="controls">
+                <select>
+                    <option>在职</option>
+                    <option>试用期</option>
+                    <option>实习</option>
+                    <option>离职</option>
+                </select>
+
+                <div class="input-append">
+                    <input class="span2" type="text" placeholder="离职日期"/>
+                    <a class="btn" href="#"><i class="icon-calendar"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="inputDepartment">所属部门</label>
+
+            <div class="controls">
+                <input type="password" id="inputDepartment" placeholder="Department">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="">层级</label>
+
+            <div class="controls">
+                <input type="password" id="" placeholder="Department">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="">汇报对象</label>
+
+            <div class="controls">
+                <input type="password" id="" placeholder="Department">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="">教育程度</label>
+
+            <div class="controls">
+                <input type="password" id="" placeholder="Department">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="">婚姻状况</label>
+
+            <div class="controls">
+                <select>
+                    <option>未婚</option>
+                    <option>已婚</option>
+                    <option>离婚</option>
+                    <option>丧偶</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="">手机</label>
+
+            <div class="controls">
+                <input type="password" id="" placeholder="Department">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputEmail">邮箱</label>
+
+            <div class="controls">
+                <input type="password" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="">工资卡号</label>
+
+            <div class="controls">
+                <input type="password" id="" placeholder="Email">
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button type="button" class="btn" ng-click='submitPost()'>Submit</button>
+            </div>
+        </div>
+    </form>
+
+</div>

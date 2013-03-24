@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="TeamHelperApp">
+<head>
+    <title>Internal System - Staff management List</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Bootstrap -->
+    <link href="http://lib.sinaapp.com/js/bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <link href="/css/style.css" rel="stylesheet" media="screen"/>
+
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script src="http://lib.sinaapp.com/js/bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+    <!-- <script src="/js/lib/angular/angular.js"></script>-->
+     <script src="/js/controllers.js"></script>
+     <script src="/js/app.js"></script>
+ </head>
+ <body>
+ <div class="navbar navbar-inverse navbar-fixed-top">
+     <div class="navbar-inner">
+         <div class="container-fluid">
+             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+             <a class="brand" href="#">内网系统</a>
+
+             <div class="nav-collapse in collapse" style="height: auto; ">
+                 <p class="navbar-text pull-right">
+                     Welcome, <a href="#" class="navbar-link" title="账号管理">Username</a>
+                     &nbsp;&nbsp;&nbsp;&nbsp;
+                     <a href="#" class="navbar-link" title="退出系统">Exit</a>
+                 </p>
+                 <ul class="nav">
+                     <li class="active dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">员工管理 <b class="caret"></b></a>
+                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                             <li><a tabindex="-1" href="StaffManagement_new.html">新建员工</a></li>
+                             <li><a tabindex="-1" href="StaffManagement_list.html">员工列表</a></li>
+                         </ul>
+                     </li>
+                     <li><a href="#">请假管理</a></li>
+                     <li><a href="#">报销管理</a></li>
+                     <li><a href="#">权限管理</a></li>
+                 </ul>
+             </div>
+             <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <!-- content begin -->
+    <ng-view></ng-view>
+    <!-- content end -->
+    <hr/>
+    <footer>
+        <p>&copy; 2013 Greedy Intelligence Ltd.</p>
+    </footer>
+</div>
+</body>
+</html>
